@@ -17,6 +17,7 @@ spec:
       containers:
       - name: helloworld-container
         image: leo78ve/harness:leo78ve
+        imagePullPolicy: Always
         ports:
         - containerPort: 8080
         resources:
