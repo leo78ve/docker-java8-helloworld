@@ -4,12 +4,12 @@ infrastructureDefinition:
   description: ""
   tags: {}
   orgIdentifier: default
-  projectIdentifier: default_project
-  environmentRef: harnessdevenv
+  projectIdentifier: Leo_Project
+  environmentRef: devenv
   deploymentType: Kubernetes
   type: KubernetesDirect
   spec:
-    connectorRef: harnessk8sconnector
-    namespace: default
+    connectorRef: Minikube
+    namespace: dev-env
     releaseName: release-<+INFRA_KEY>
   allowSimultaneousDeployments: false
